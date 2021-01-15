@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <pre>
+        selector js linh hoạt giống js
+        document.querySelectorAll("bộ chọn css")
+        sẽ trả về 1 nodelist gần giống như array
+        là các phần tử phù hợp với bộ chọn css của chúng ta
+    </pre>
+    <div id="parent">
+        <p>Thẻ p1 trong #parent</p>
+        <p>Thẻ p2 trong #parent</p>
+    </div>
+    <p>Thẻ p1 ngoài #parent</p>
+    <script>
+        var p = document.querySelectorAll("#parent p");
+        console.log(p);
+
+        document.querySelectorAll("#parent p")[0].innerHTML = "hn";
+        document.querySelectorAll("#parent p")[1].innerHTML = "hp";
+        
+    </script>
+</body>
+</html>
