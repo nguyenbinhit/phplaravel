@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0 auto;
+            width: 80%;
+            text-align: center;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <pre>
+        dùng vòng lặp xây dựng in ra các thẻ option trong select có id là nam
+        từ năm 1900 đến 2021
+    </pre>
+    <label>Năm sinh nhật:</label>
+    <select name="nam" id="nam">
+
+    </select>
+    <script>
+        var optionNam = "";
+        for (var i = 1900; i<=2021; i++) {
+            optionNam = optionNam + '<option value="'+i+'">Năm '+i+'</option>';
+        }
+
+        console.log(optionNam);
+        document.getElementById("nam").innerHTML = optionNam;
+    </script>
+</body>
+</html>
