@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <pre>
+        variable scope (phạm vi của biến)
+        - phạm vi toàn cục ( global )
+        - phạm vi cục bộ ( local )
+    </pre>
+
+    <script>
+        // khai báo các viến bên ngoài hàm biến toàn cục
+        var d = new Date();
+
+
+        // khai báo biên
+        function myFunction() {
+            //khi khởi tạo và khai báo từ khoá var trong hàm là biến cục bộ
+            // thì là biến cục bộ
+            var carName = "Volvo";
+            console.log(carName);
+            console.log(d);
+        }
+        myFunction();
+        console.log(d);
+
+    </script>
+</body>
+</html>
