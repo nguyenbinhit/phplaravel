@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <pre>
+        khai báo biến sử dụng từ khoá var
+        hk thêm 2 từ khoá let và const
+
+
+        phạm vi block scope trong {}
+    </pre>
+
+    <script>
+        // global
+        var x = 10;
+        {
+            //block scope
+            let x = 2;
+            console.log("trong {} " + x);
+        }
+
+        console.log("ngoài {} " + x);
+    </script>
+</body>
+</html>
