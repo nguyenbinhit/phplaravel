@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <pre>
+
+    </pre>
+    <form id="form1" name="form1" action="">
+        <label>Họ tên</label>
+        <input type="text" id="name" name="name" />
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        document.getElementById("form1").onsubmit = function () {
+            var name = document.getElementById("name").value;
+            if (name == "") {
+                alert("Chua submit form");
+                return false;
+            }
+            else {
+                alert("Submit du lieu di");
+            }
+        }
+    </script>
+</body>
+</html>
