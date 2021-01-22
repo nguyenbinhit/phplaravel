@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <pre>
+        sử dụng vòng lặp duyệt mảng
+    </pre>
+    <ul id="list">
+
+    </ul>
+    <script>
+        var cities = ["hn", "bn", "bg", "hp"];
+
+        //duyệt mảng
+        var arrLength = cities.length;
+        console.log(arrLength);
+        var html = "";
+        for (var i = 0; i < arrLength; i++)
+        {
+            html = html + "<li>" + cities[i] + "</li>";
+        }
+        document.getElementById("list").innerHTML = html;
+    </script>
+</body>
+</html>
