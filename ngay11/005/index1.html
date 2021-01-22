@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <pre>
+        object đối tượng trong js
+    </pre>
+    <script>
+        var car = {type:"Fiat", model:"500", color:"white", price:"500000000"};
+        var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+
+        document.writeln("<br>" + car.price);
+        document.writeln("<br>" + car["price"]);
+
+        car.price = 300000000;
+
+        // vừa có property vừa có method
+        var person2 = {
+            firstName: "John",
+            lastName: "Doe",
+            id: "5566",
+            diemT: 10,
+            diemL: 7,
+            diemH: 8,
+            diemTb: 0,
+            fullName: function () {
+                return this.firstName + " " + this.lastName;
+            },
+            diemTB: function () {
+              this.diemTb = ((this.diemH+this.diemL+this.diemT)/3);
+              return this.diemTb;
+            },
+            result: function () {
+                this.diemTb = ((this.diemH+this.diemL+this.diemT)/3);
+                if (this.diemTb > 5) {
+                    return 1;
+                }
+                return 0;
+            }
+        };
+
+        console.log(person2.diemT);
+        console.log(person2["diemT"]);
+        console.log(person2.diemTB());
+        console.log(person2.result());
+    </script>
+</body>
+</html>
