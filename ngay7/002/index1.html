@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .banner {
+            background-color: orange;
+            padding: 20px;
+            display: flex;
+            /*flex-direction: column;*/
+            /* cấc flex item bên trong sẽ nằm trồng lên nhau như mặc định*/
+            /*flex-direction: row;*/
+            /* cấc flex item bên theo chiều ngang trên cùng 1 hàng */
+            /*flex-direction: row-reverse;*/
+            flex-direction: column-reverse;
+            align-content: center;
+            align-items: center;
+        }
+
+        .banner-item {
+            background-color: #3498db;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .flex-container {
+            display: flex;
+            /*flex-wrap: wrap;*/
+            background-color: orange;
+            padding: 20px;
+            flex-flow: row wrap;
+        }
+
+        .flex-container>div {
+            background-color: #3498db;
+            padding: 20px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+<pre>
+        1 - flex container: khung chia bên ngoài
+        2- flex item thẻ con
+
+        trong flex container có 6 thuộc tính quan trọng
+        flex-direction
+        flex-wrap
+        flex-flow
+        justify-content
+        align-items
+        align-content
+    </pre>
+<div class="banner">
+    <div class="banner-item">1</div>
+    <div class="banner-item">2</div>
+    <div class="banner-item">3</div>
+    <div class="banner-item">4</div>
+    <div class="banner-item">5</div>
+</div>
+<div class="flex-container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+</div>
+</body>
+</html>
