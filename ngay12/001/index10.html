@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>JavaScript Function Sequence</h2>
+
+<p>JavaScript functions are executed in the sequence they are called.</p>
+<pre>
+    Một callback là hàm được truyền vào như là một đối số tới hàm khác
+    công nghệ này cho phép một hàm có thể gọi hàm khác
+    callback có thể được chạy sau khi hàm khác chạy xong
+</pre>
+
+<p id="demo"></p>
+
+<script>
+    function myDisplayer(some) {
+        console.log(some);
+        // document.getElementById("demo").innerHTML = some;
+    }
+
+    function myFirst(callback) {
+
+        setTimeout(function () {
+            myDisplayer("Hello");
+            callback();
+            // mySecond();
+        }, 3000);
+    }
+
+    function mySecond() {
+        myDisplayer("Goodbye");
+    }
+    // gọi lần 1
+    myFirst(mySecond);
+    // gọi lần 2
+    // mySecond();
+</script>
+</body>
+</html>
