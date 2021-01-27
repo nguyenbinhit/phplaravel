@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <pre>
+        Producing code" is code that can take some time
+        là một đoạn mã mà sẽ tiêu tốn 1 khoảng time
+        "Consuming code" is code that must wait for the result
+        là đoạn code đợi kết quả thử từ producing code
+        A Promise is a JavaScript object that links producing code and consuming code
+        là một đối tượng trong js mà liên kết quá trình sản xuất code và tiêu thụ code
+
+        b1: tạo ra 1 đối tượng promises bằng từ khoá new
+        b2: truyền vào new 1 hàm vô danh là function()
+        b3: hàm vô danh k có tên này có 2 tham số Resolve() và Reject()
+            Resolve tượng trưng cho thành công
+            Reject tượng trưng cho thất bại
+    </pre>
+
+    <script>
+        // sản xuất mã
+        let myPromises = new Promise(function (resolve, reject) {
+            let x = 3;
+            if (x >= 18) {
+                resolve();
+            }
+            else {
+                reject();
+            }
+        });
+
+        // tiêu thụ mã
+        myPromises.then(function () {
+            console.log("Thành công");
+        }, function () {
+            console.log("Thất bại");
+        });
+    </script>
+</body>
+</html>
