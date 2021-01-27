@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <pre>
+        lớp ở trong javascript (class)
+        khởi tạo đối tượng từ class
+        vs class oto chúng ta
+        contructor là hàm khởi tạo hay phương thức khởi tạo của class này được chạy khi mà chúng ta khởi tạo đối tượng từ class
+        từ khoá this ben trong class đại diện cho chính class đó
+    </pre>
+
+    <script>
+        class Oto{
+            constructor(name, color, price, model) {
+                // tạo ra các thuộc tính
+                this.name_pro = name;
+                this.color_pro = color;
+                this.price_pro = price;
+                this.model_pro = model;
+            }
+            // phướng thức mới
+            showThongTin() {
+                document.writeln("<br>" + this.name_pro);
+                document.writeln("<br>" + this.color_pro);
+                document.writeln("<br>" + this.price_pro);
+                document.writeln("<br>" + this.model_pro);
+            }
+        }
+
+        // khởi tạo đối tượng từ class Oto trên
+        var fai123 = new Oto("fadil", "đen", 100000000000, "2020");
+        console.log(fai123);
+
+        var focus123 = new Oto("focus", "vàng", 60000000, "2019");
+        console.log(focus123);
+
+        // gọi phương thức từ trong class
+        focus123.showThongTin();
+    </script>
+</body>
+</html>
