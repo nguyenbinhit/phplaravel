@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+        <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+        <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Poppins|Raleway&display=swap" rel="stylesheet">
+        <style type="text/css">
+            :root {
+                --main-color: #1769ff;
+            }
+
+
+            .clearfix::after {
+                display: block;
+                clear: both;
+                content: "";
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="page-wrap">
+            <style type="text/css">
+                header {
+                    padding-top: 40px;
+                    padding-bottom: 40px;
+                    background-color: #f4f2f0;
+                }
+
+                header .logo a {
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 32px;
+                    color: black;
+                    text-decoration: none;
+                    letter-spacing: 6px;
+                }
+
+                header nav ul {
+                    list-style: none;
+                    margin: 0;
+                    float: right;
+                }
+
+                header nav li {
+                    float: left;
+                }
+
+                header nav li a {
+                    padding: 10px 20px;
+                    color: #333333;
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 20px;
+                    text-decoration: none;
+                }
+
+                header nav li a:hover {
+                    text-decoration: none;
+                    color: var(--main-color);
+                }
+
+                header .btn-hireme-box a {
+                    font-family: 'Poppins', sans-serif;
+                    border: 1px solid var(--main-color);
+                    border-radius: 40px;
+                    color: var(--main-color);
+                    text-decoration: none;
+                    padding: 12px 20px;
+                    font-weight: bold;
+                }
+
+                @media screen and (max-width: 1024px) {
+                    header .logo {
+                        text-align: center;
+                    }
+
+                    header nav {
+                        text-align: center;
+                    }
+                    header nav ul {
+                        text-align: center;
+                        padding: 0;
+                        float: none;
+                    }
+
+                    header nav ul li{
+                        float: none;
+                    }
+                    header .btn-hireme-box {
+                        text-align: center;
+                        margin-top: 30px;
+                    }
+
+                }
+            </style>
+
+            <header class="clearfix">
+                <div class="container">
+                    <div class="row">
+                        <div class="logo col-lg-4 col-12">
+                            <a href="#" class="">PORTFOLIO</a>
+                        </div>
+                        <nav class="col-lg-6 col-12">
+                            <ul class="clearfix">
+                                <li><a href="#" class="">Home</a></li>
+                                <li><a href="#" class="">Demo</a></li>
+                                <li><a href="#" class="">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <div class="col-lg-2 col-12 btn-hireme-box">
+                            <a href="#" class="">Hire me!</a>
+                        </div>
+                    </div>
+                </div>
+            </header> <!-- end header -->
+            
+            <style type="text/css">
+                .banner .hero-image {
+                    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+                    /* background: #f4f2f0 url("images/portfolio-website-template_02.png") top left;*/
+                    background-image: /*url("images/portfolio-website-template_02.png"),*/ url("images/portfolio-website-template_03.png");
+                    background-position: /*left top,*/ right top;
+                    background-repeat: /*no-repeat,*/ repeat;
+                    /* Set a specific height */
+                    height: 700px;
+
+                    /* Position and center the image to scale nicely on all screens */
+                    position: relative;
+                }
+
+                .banner .hero-img > img {
+                    height: 700px;
+                }
+
+                /* Place text in the middle of the image */
+                .banner .hero-text {
+                    position: absolute;
+                    top: 50%;
+                    left: 70%;
+                    transform: translate(-50%, -50%);
+                    color: white;
+                }
+
+                .banner .hero-text .primary-hero {
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 36px;
+                    color: #333333;
+                    text-transform: capitalize;
+                }
+
+                .banner .hero-text .secondary-hero {
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 48px;
+                    color: #333333;
+                    text-transform: capitalize;
+                    margin-top: 20px;
+                }
+
+                .banner .hero-text .third-hero {
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 18px;
+                    color: #777777;
+                    padding-bottom: 30px;
+                }
+
+                .banner .hero-text a.see-my-work {
+                    margin-top: 60px;
+                    text-decoration: none;
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 16px;
+                    color: white;
+                    background-color: var(--main-color);
+                    padding: 20px 40px;
+                    border-radius: 40px;
+                }
+
+                @media screen and (max-width: 1224px) {
+
+                    .banner .hero-image {
+                        height: auto;
+                    }
+
+                    .banner .hero-img > img {
+                        height: auto;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+
+                    .banner .hero-text {
+                        position: static;
+                        transform: translate(0, 0);
+                        text-align: center;
+                        margin-top: 40px;
+                    }
+
+                    .banner .hero-text .primary-hero {
+                        font-size: 20px !important;
+                    }
+
+                    .banner .hero-text .secondary-hero {
+                        font-size: 22px !important;
+                    }
+
+                    .banner .hero-text .third-hero {
+                        font-size: 14px !important;
+                    }
+
+                }
+            </style>
+            
+            <section class="banner">
+                <div class="hero-image">
+                    <div class="hero-img">
+                        <img src="images/portfolio-website-template_02.png" alt="">
+                    </div>
+                    <div class="hero-text">
+                        <h1 class="primary-hero">I am Deeje</h1>
+                        <h2 class="secondary-hero">Expert in Graphic Design &Development</h2>
+                        <p class="third-hero">
+                            Donec sollicitudin molestie malesuada. Donec rutrum congue leo eget malesuada.
+                            Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
+                            Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
+                        </p>
+                        <a href="#" class="see-my-work">SEE MY WORK</a>
+                    </div>
+                </div>
+            </section><!-- end section -->
+
+
+        </div>
+    </body>
+</html>
