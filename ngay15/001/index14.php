@@ -22,9 +22,9 @@
             <tr>
                 <td>1</td>
                 <td>1</td>
-                <td>20</td>
+                <td>1</td>
             </tr>
-            <?php for ($i = 2; $i < 20; $i++) : ?>
+            <?php for ($i = 2; $i <= 20; $i++) : ?>
                 <tr>
                     <td><?php echo $i ?></td>
                     <td><?php echo $i ?></td>
