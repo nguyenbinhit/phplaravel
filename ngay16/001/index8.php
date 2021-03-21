@@ -30,7 +30,7 @@
     ?>
     <pre>
         mảng sinvien và sinhvien2 toàn là mảng kết hợp
-        
+
     </pre>
 </body>
 </html>
