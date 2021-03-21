@@ -45,7 +45,7 @@
                     <td><?php echo $city["name"] ?></td>
                     <td><?php echo $city["ds"]?></td>
                     <td><?php echo $city["s"] ?></td>
-                    <td>?</td>
+                    <td><?php echo $city["ds"]/$city["s"] ?></td>
                 </tr>
             <?php endforeach; ?>
         </tbody>
