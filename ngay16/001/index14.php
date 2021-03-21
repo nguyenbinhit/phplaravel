@@ -30,17 +30,23 @@
     print_r($cities);
     echo "</pre>";
 
+
+    foreach($cities as $keyCity => $city) {
+        $cities[$keyCity]["name"] = "thành phố " . $cities[$keyCity]["name"];
+
+        $cities[$keyCity]["mds"] = ($cities[$keyCity]["ds"]/$cities[$keyCity]["s"]);
+
+        $cities[$keyCity]["ds"] = $cities[$keyCity]["ds"] . " người";
+        $cities[$keyCity]["s"] = $cities[$keyCity]["s"] . " km2";
+
+    }
     echo "<br>Mảng sau khi xử lý";
-    $cities = [
-        ["name" => "thành phố Đà Nẵng", "ds" => "5000000 người", "s" => "1000 km2", "mds" => "5000"],
-        ["name" => "thành phố Hà Nội", "ds" => "8000000 người", "s" => "2000 km2", "mds" => "4000"],
-        ["name" => "thành phố Nghệ An", "ds" => "2000000 người", "s" => "100 km2", "mds" => "20000"],
-        ["name" => "thành phố Hà Tĩnh", "ds" => "1000000 người", "s" => "200 km2", "mds" => "500"],
-        ["name" => "thành phố Việt Trì", "ds" => "3000000 người", "s" => "800 km2", "mds" => "3750"]
-    ];
     echo "<pre>";
     print_r($cities);
     echo "</pre>";
+
+
+
     ?>
 </body>
 </html>
