@@ -11,7 +11,7 @@ class Student4
         - __construct được gọi tự động khi chúng ta khởi tạo object
         bằng từ khóa new ClassName()
      * */
-    
+
     public $name;
     public $age = 0;
     public $location;
