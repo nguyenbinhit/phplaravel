@@ -22,7 +22,7 @@ if (isset($_POST["submit"])) {
     echo "<pre>";
     print_r($_FILES);
     echo "</pre>";
-    
+
 
     $target_dir = "uploads/";
 
