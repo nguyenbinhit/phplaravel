@@ -18,7 +18,7 @@ try {
 
 }catch(PDOException $e) {
 
-    // kết nối thất bại 
+    // kết nối thất bại
     echo "<pre>";
     print_r($e);
     echo "</pre>";

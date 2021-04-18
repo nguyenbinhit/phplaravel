@@ -10,7 +10,7 @@ $databaseName = "t3h.12.2020";
 // kết nối đến CSDL theo hướng hàm function
 // dùng hàm có sẵn của php để kết nối
 
-$conn = mysqli_connect($serverName, $serverName, $password, $databaseName);
+$conn = mysqli_connect($serverName, $userName, $password, $databaseName);
 
 // kiểm tra lỗi hay k
 //var_dump($conn);
