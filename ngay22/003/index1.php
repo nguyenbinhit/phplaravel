@@ -1,6 +1,6 @@
 <?php
 // XAMPP
-$serverName = "root";
+$userName = "root";
 $password = "";
 // máy chủ CSDL ( IP ) sử dụng 127.0.0.1 hay localhost => production : 192.118.1.11
 $serverName = "127.0.0.1";
