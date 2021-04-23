@@ -25,6 +25,17 @@ if (is_array($_POST) && !empty($_POST)) {
     $sqlUpdate = "UPDATE `students` SET `student_name`='$student_name', `student_score`='$student_score', `student_location`='$student_location', `student_birthday`= '$student_birthday',`student_gender`=$student_gender WHERE `student_id`=$student_id";
 
 //    echo "$sqlUpdate";
+
+    $resultUpdate = $conn->exec($sqlUpdate);
+
+    if ($resultUpdate == 1) {
+        header("Location: list.php");
+    }
+    else {
+
+    }
+
+
 }
 
 // lấy ra dữ liệu cũ
@@ -91,7 +102,7 @@ if ($id > 0) {
                     // strtotime : chuyển 1 chuỗi thành 1 timestamp
                     $student_birthday = isset($student->student_birthday) ? strtotime($student->student_birthday) : 0;
                     // date() định dạng timestamp thành 1 chuỗi thời gian theo định dạng mới
-                    $new_birthday = date("d/m/Y", $student_birthday);
+                    $new_birthday = date("Y-m-d", $student_birthday);
                     //echo $new_birthday;
                     ?>
                     <input type="date" name="student_birthday" value="<?php echo $new_birthday ?>" class="form-control">
