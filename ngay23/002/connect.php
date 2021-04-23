@@ -1,7 +1,4 @@
 <?php
-
-// CREATE DATABASE dbname;
-
 // XAMPP
 $userName = "root";
 $password = "";
@@ -12,7 +9,13 @@ $databaseName = "abc";
 
 
 try {
-    $conn = new PDO("mysql:host=$serverName;dbname=$databaseName", $userName, $password);
+
+    $options = array(
+        PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8",
+        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
+    );
+    $conn = new PDO("mysql:host=$serverName;dbname=$databaseName", $userName, $password,$options);
+
     // set the PDO error mode to exception
     // đặt chế độ lỗi cho ngoại lệ khi kết nối PDO
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
