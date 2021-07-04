@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', "Backend\DashboardController@index");
 
+
 Route::get('/backend/category/index', "Backend\CategoryController@index");
 Route::get('/backend/category/create', "Backend\CategoryController@create");
 Route::get('/backend/category/edit/{id}', "Backend\CategoryController@edit");
